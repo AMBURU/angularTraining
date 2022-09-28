@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { empInfo } from './common/ieModule'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-project';
+  title = 'angular -app';
+  empLocation = empInfo.empLocation;
+
+
+  constructor() {
+
+  }
+
+
+
+
+
 }

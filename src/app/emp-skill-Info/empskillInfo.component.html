@@ -1,0 +1,35 @@
+<!-- <h3>
+    {{'employee'}} with id {{empSkillSetInfo.empId}} is having a skill in
+
+
+    <span>{{empSkillSetInfo.empSkillset}}</span>
+
+
+    <br> -->
+
+<div *ngFor="let empinfo of empSkillSetArray">
+    <app-emp-info [empinfo]="empinfo"></app-emp-info>
+
+    <!-- <span>{{'employee'}} with id {{empinfo.empId}} is having a skill in</span>
+
+
+    <span [ngClass]=
+    "{'badge text-bg-success':empinfo.empSkillset ==='Angular',
+    'badge text-bg-secondary':empinfo.empSkillset ==='React'}">{{empinfo.empSkillset}}</span>
+    <br> -->
+</div>
+
+
+
+
+
+
+<input type="number" class="m-3" placeholder="emp Id" [(ngModel)]="newEmployeeId">
+<br>
+<input type="employee skill" class="m-3"  placeholder="emp skill" [(ngModel)]="newEmployeeSkillSet">
+<br>
+<button  appdisableafterclick class="btn btn-primary"  (click)="onAddBtnClick()"> add a new employee skill set</button>
+<br>
+<br>
+
+<span>{{newEmpcreatedInfo}}</span>

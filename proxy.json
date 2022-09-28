@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+        "target": "URL : https://team.amat.com/sites/EJunction-dev",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

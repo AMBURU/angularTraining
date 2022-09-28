@@ -1,0 +1,19 @@
+
+
+
+<!-- {{showMessage}}
+<button class="btn btn-primary" (click)="showMessagebtn()"> show message</button> -->
+
+<div *ngIf="empinfo">
+    <span>{{'employee'}} with id {{empinfo.empId}} is having a skill in</span>
+
+
+    <!-- <span [ngClass]=
+    "{'badge text-bg-success':empinfo.empSkillset ==='Angular',
+    'badge text-bg-secondary':empinfo.empSkillset ==='React'}">{{empinfo.empSkillset}}</span> -->
+    <span  setColor [skillSet]="empinfo.empSkillset">{{empinfo.empSkillset}}</span>
+    <br>
+</div>
+
+
+
